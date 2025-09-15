@@ -57,15 +57,10 @@ function App() {
 <footer className="app-footer">
         <Container>
           <Row>
-            <Col md={6}>
+            <Col>
               <p>©2024 | Made with ❤️ by Anushka Mandal</p>
             </Col>
-            <Col md={6} className="text-md-end">
-              <p>
-                <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a> | 
-                <a href="mailto:youremail@example.com"> Contact</a>
-              </p>
-            </Col>
+
           </Row>
         </Container>
       </footer>
