@@ -1,0 +1,72 @@
+.investment-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.investment-form, .result {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group, .investment-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.investment-row {
+  flex-direction: row;
+  gap: 10px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-btn, .remove-btn, .submit-btn, .download-btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.add-btn:hover, .remove-btn:hover, .submit-btn:hover, .download-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .investment-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .investment-row {
+    flex-direction: column;
+  }
+}
